@@ -43,13 +43,13 @@ p.intro {
   line-height: 24px;
 }
 a {
-  color: #608dfd;
+  color: #f0d3a7;
   font-weight: 400;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #608dfd;
+  color: #f0d3a7;
 }
 ul,
 ol {
@@ -66,7 +66,7 @@ hr {
   width: 70px;
   text-align: center;
   position: relative;
-  background: #1e7a46;
+  background: #f0d3a7;
   margin-bottom: 20px;
   border: 0;
 }
@@ -76,21 +76,20 @@ hr {
   transition: all 0.8s;
 }
 #menu.navbar-default {
-  background-color: #fff;
-  border-color: rgba(231, 231, 231, 0);
+  background-color: #412F2D;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: #333;
+  color: #f0d3a7;
   text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  color: #555;
+  color: white;
   font-size: 15px;
   font-weight: 400;
   padding: 8px 2px;
@@ -104,7 +103,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: #412F2D;
   content: "";
   transition: width 0.2s;
 }
@@ -125,7 +124,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  background: linear-gradient(to right, white 0%, #f0d3a7 100%) !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -134,11 +133,10 @@ hr {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #fff;
-  border-color: #608dfd;
+  background-color: #412F2D;
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
-  background-color: #608dfd;
+  background-color: #f0d3a7;
 }
 .section-title {
   margin-bottom: 70px;
@@ -152,7 +150,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(to right, #ffffff 0%, #6372ff 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -165,26 +163,29 @@ hr {
 .btn-custom {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: #fff;
-  background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-  padding: 14px 34px;
+  color: #f0d3a7;
+  background: linear-gradient(to bottom, #e49b82 0%, #ff5218 100%);
+  border: solid #f0d3a7 3px;
+  padding: 10px 28px;
   letter-spacing: 1px;
   margin: 0;
   font-size: 15px;
   font-weight: 500;
   border-radius: 25px;
   transition: all 0.5s linear;
-  border: 0;
+}
+.btn-div{
+  width: 100%;
+  text-align: right;
 }
 .btn-custom:hover,
 .btn-custom:focus,
 .btn-custom.focus,
 .btn-custom:active,
 .btn-custom.active {
-  color: #fff;
+  color: rgb(81, 61, 61);
   background-image: none;
-  background-color: #6372ff;
+  background-color: #f0d3a7;
 }
 .btn:active,
 .btn.active {
@@ -208,42 +209,75 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
-  background-color: #e5e5e5;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-color: #EA714D;
+  padding-bottom: 100px;
 }
-.intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+.title-container{
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-img1{
+  width: 45%;
+  position: relative;
+  left: 0;
+  bottom: 0;
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
-  color: #fff;
-  font-size: 82px;
+  color: #f0d3a7;
+  font-size: 12rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
 }
 .intro h1 span {
-  font-weight: 800;
-  color: #5ca9fb;
+  color: #f0d3a7;
 }
-.intro p {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 30px;
-  margin: 0 auto;
-  margin-bottom: 60px;
+.intro h2{
+  color: #412F2D;
+  text-align: right;
+  font-size: 8rem;
+
 }
-header .intro-text {
-  padding-top: 350px;
-  padding-bottom: 200px;
-  text-align: center;
+@media (max-width: 767px) {
+  .title-container{
+    display: block;
+    text-align: center;
+  }
+  .header-img1{
+    width: 65%;
+  }
+  .intro h1{
+    font-size: 6rem;
+    text-align: center;
+  }
+  .intro h2{
+    font-size: 4rem;
+    text-align: center;
+  }
+  .btn-custom {
+    border: solid #f0d3a7 2px;
+    padding: 5px 12px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .btn-div{
+    text-align: center;
+  }
 }
+@media (min-width: 768px) {
+  
+}
+@media (min-width: 992px) {
+  
+}
+@media (min-width: 1200px) {
+  
+}
+
 /* Features Section */
 #features {
   background: #f6f6f6;
@@ -257,12 +291,13 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #412F2D 0%, #5ca9fb 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
 #about {
   padding: 100px 0;
+  background: linear-gradient(to right, #f0d3a7 0%, #ffffff 100%);
 }
 #about h3 {
   font-size: 22px;
@@ -276,7 +311,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(to right, #fbb35c 0%, #ff6363 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -291,15 +326,17 @@ header .intro-text {
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #5ca9fb;
+  color: #fba65c;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
 }
 #about img {
-  width: 520px;
+  width: 400px;
+  margin-bottom: 40px;
+  border-radius: 20px;
   margin-top: 10px;
-  background: #fff;
+  background: #f0d3a7;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
 }
@@ -310,7 +347,7 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #EB734A 0%, #f39a7d 100%);
   color: #fff;
 }
 #services .service-desc {
@@ -334,7 +371,7 @@ header .intro-text {
   width: 120px;
   height: 120px;
   padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #ffbca5 0%, #ff5218 100%);
   border-radius: 50%;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -441,6 +478,7 @@ header .intro-text {
 }
 /* Team Section */
 #team {
+  background: linear-gradient(to bottom, #fff 0%, #ffeacb 100%);
   padding: 100px 0;
 }
 #team h4 {
@@ -460,7 +498,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to bottom, #e49b82 0%, #ff5218 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -599,8 +637,10 @@ label {
   border-bottom: 2px solid #608dfd;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #about img {
     margin: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

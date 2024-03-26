@@ -9,7 +9,7 @@
   #team,
   #contact,
   #footer {
-    width: 111%;
+    min-width: 100%;
   }
 
   #portfolio {

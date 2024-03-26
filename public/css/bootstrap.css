@@ -1963,9 +1963,6 @@ pre code {
   .col-md-4 {
     width: 33.33333333%;
   }
-  .col-md-3 {
-    width: 25%;
-  }
   .col-md-2 {
     width: 16.66666667%;
   }
@@ -4528,14 +4525,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #ddd;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #ddd;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #888;
+  background-color: #f0d3a7;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
