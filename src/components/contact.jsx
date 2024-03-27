@@ -9,13 +9,16 @@ const initialState = {
 };
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
+  const [ buttonText, setButtonText ] = useState("Send Message");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
-  const clearState = () => setState({ ...initialState });
-  
+  const clearState = () => {
+    setState(initialState);
+  };
+    
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,17 +27,22 @@ export const Contact = (props) => {
     /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ 
     
     emailjs
-      .sendForm("service_dbwskau", "template_nnate9g", e.target, "s4477uq5T8NVZoAS9")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+    .sendForm("service_dbwskau", "template_nnate9g", e.target, "s4477uq5T8NVZoAS9")
+    .then(
+      (result) => {
+        console.log(result.text);
+        e.target.reset();
+        clearState(); // Clear form fields after successful submission
+        setButtonText("Sent!"); // Update button text
+        setTimeout(() => {
+          setButtonText("Send Message"); // Revert button text after 3 seconds
+        }, 3000);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+};
   return (
     <div>
       <div id="contact">
@@ -59,6 +67,8 @@ export const Contact = (props) => {
                         className="form-control"
                         placeholder="Name"
                         required
+                        style={{ borderRadius: '25px' }}
+
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -74,6 +84,8 @@ export const Contact = (props) => {
                         placeholder="Email"
                         required
                         onChange={handleChange}
+                        style={{ borderRadius: '25px' }}
+
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -88,12 +100,13 @@ export const Contact = (props) => {
                     placeholder="Message"
                     required
                     onChange={handleChange}
+                    style={{ borderRadius: '15px' }}
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                  {buttonText}
                 </button>
               </form>
             </div>
