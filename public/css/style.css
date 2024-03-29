@@ -76,14 +76,14 @@ hr {
   transition: all 0.8s;
 }
 #menu.navbar-default {
-  background-color: #412F2D;
+  background-color: #f78163;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: #f0d3a7;
+  color: #b9fdf2;
   text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
@@ -103,7 +103,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: #412F2D;
+  background: #3e4844;
   content: "";
   transition: width 0.2s;
 }
@@ -163,9 +163,9 @@ hr {
 .btn-custom {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: #f0d3a7;
-  background: linear-gradient(to bottom, #e49b82 0%, #ff5218 100%);
-  border: solid #f0d3a7 3px;
+  color: white;
+  background: linear-gradient(to bottom, #faaa3b 0%, #f78163 100%);
+  border: solid white 3px;
   padding: 10px 28px;
   letter-spacing: 1px;
   margin: 0;
@@ -209,7 +209,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background-color: #EA714D;
+  background-color: #f9c247;
   padding-bottom: 100px;
 }
 .title-container{
@@ -219,17 +219,16 @@ a:focus,
   align-items: center;
 }
 .header-img1{
-  width: 45%;
-  position: relative;
-  left: 0;
-  bottom: 0;
+  width: 100%
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
-  color: #f0d3a7;
+  color: white;
   font-size: 12rem;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: right;
+margin-right: 75px;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -237,15 +236,29 @@ a:focus,
   color: #f0d3a7;
 }
 .intro h2{
-  color: #412F2D;
-  text-align: right;
+  margin-right: 75px;
+
+  color: #3e4844;
+  text-align: left;
   font-size: 8rem;
 
+}
+.second-half{
+  width: 50%;
+}
+.title2{
+  width: 50%;
 }
 @media (max-width: 767px) {
   .title-container{
     display: block;
     text-align: center;
+  }
+  .second-half{
+    width: 100%;
+  }
+  .title2{
+    width: 100%;
   }
   .header-img1{
     width: 65%;
@@ -259,7 +272,7 @@ a:focus,
     text-align: center;
   }
   .btn-custom {
-    border: solid #f0d3a7 2px;
+    border: solid #f78163 2px;
     padding: 5px 12px;
     font-size: 10px;
     font-weight: 600;
@@ -267,6 +280,7 @@ a:focus,
   .btn-div{
     text-align: center;
   }
+
 }
 @media (min-width: 768px) {
   

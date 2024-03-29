@@ -7,12 +7,15 @@ export const Header = (props) => {
         <div className="overlay">
           <div className="container">
             <div className="title-container">
-              <img  alt="logo" className="header-img1" src="img/buzz3.jpeg">
+              <div className="second-half">
+
+              <img  alt="logo" className="header-img1" src="img/birdseye2.jpg">
               </img>
+              </div>
               <div className="title2">
-              <h1 className="buzz">Buzz</h1>
+              <h1 className="buzz">Birds</h1>
               <div>
-              <h2>Box<span>.</span></h2>
+              <h2>Eye<span>.</span></h2>
               </div>
               <div className="btn-div">
               <a

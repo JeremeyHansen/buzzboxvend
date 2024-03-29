@@ -26,7 +26,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            Buzz <span className="nav-title1"> Box</span>.
+            BirdsEye.
           </a>{" "}
         </div>
 
@@ -40,6 +40,11 @@ export const Navigation = (props) => {
             <li>
               <a href="#services" className="page-scroll" onClick={handleLinkClick}>
                 Services
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" className="page-scroll" onClick={handleLinkClick}>
+                Gallery
               </a>
             </li>
             <li>
