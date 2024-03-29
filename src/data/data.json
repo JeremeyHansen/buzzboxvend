@@ -68,19 +68,19 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-line-chart",
-      "name": "Cross Revenue Stream",
-      "text": "We not only elevate the customer experience but also boost revenue by encouraging longer stays with more spending opportunities."
+      "icon": "fa fa-camera-retro",
+      "name": "High Def Imagery",
+      "text": "Elevate your listings with our breathtaking aerial photography services, capturing homes from unique perspectives that stand out in the market."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Amenities",
-      "text": "Enhance your guests' experience with amenities tailored specific to your location, providing a fun and unique time for your guests."
+      "icon": "fa fa-video-camera",
+      "name": "4K Video",
+      "text": "Immerse potential buyers in the full experience of your properties with our captivating aerial videography, showcasing every detail and feature in stunning clarity."
     },
     {
-      "icon": "fa   fa-cogs",
-      "name": "Maintenance and Services",
-      "text": "Leave the maintenance and stocking to us! With our hands-off service, we'll ensure your vending machines are always up and running."
+      "icon": "fa fa-street-view",
+      "name": "Property Boundary Mapping",
+      "text": "Ensure accuracy and precision in land management decisions with our advanced property line mapping services."
     }
   ],
   "Testimonials": [
@@ -116,11 +116,6 @@
     }
   ],
   "Team": [
-    {
-      "img": "img/team/01.jpg",
-      "name": "Noah King",
-      "job": "Founder"
-    },
     {
       "img": "img/team/02.jpg",
       "name": "Jeremey Hansen",

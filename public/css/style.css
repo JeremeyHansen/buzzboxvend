@@ -76,14 +76,14 @@ hr {
   transition: all 0.8s;
 }
 #menu.navbar-default {
-  background-color: #f78163;
+  background-color: #ff6e6e;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: #b9fdf2;
+  color: white;
   text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
@@ -282,15 +282,6 @@ margin-right: 75px;
   }
 
 }
-@media (min-width: 768px) {
-  
-}
-@media (min-width: 992px) {
-  
-}
-@media (min-width: 1200px) {
-  
-}
 
 /* Features Section */
 #features {
@@ -354,6 +345,7 @@ margin-right: 75px;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
 }
+
 #about p {
   line-height: 24px;
   margin: 30px 0;
@@ -361,7 +353,7 @@ margin-right: 75px;
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #EB734A 0%, #f39a7d 100%);
+  background: linear-gradient(to right, #c75546 0%, #ffba4b 100%);
   color: #fff;
 }
 #services .service-desc {
@@ -512,7 +504,7 @@ margin-right: 75px;
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to bottom, #e49b82 0%, #ff5218 100%);
+  background: linear-gradient(to right, #ffba4b 0%, #c75546 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {

@@ -7,11 +7,14 @@ export const Team = (props) => {
         <div className="col-md-8 col-md-offset-2 section-title">
           <h2>Meet the Team</h2>
           <p>
-            Meet Noah, the sales whiz who's conquered logistics company scaling
-            and other entrepreneurial adventures. Paired with his lifelong buddy
-            Jeremey, whose background spans from software engineering to
-            bartending and management, they form the dynamic duo propelling Buzz
-            Box towards endless success and innovation!
+            Hi, my name is Jeremy Hansen. I'm an accomplished entrepreneur with
+            a diverse background spanning software development, music, and
+            hospitality industries. When not immersed in business ventures,
+            you'll find me carving waves on the surf, honing my skills in
+            various sports, and creating melodies in the studio. Passionate
+            about both culinary delights and fostering enjoyable experiences, I
+            thrive on blending creativity with dedication to deliver exceptional
+            results.
           </p>
         </div>
         <div id="row">
